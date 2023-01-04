@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>School of Nerds - escuela de tecnologias -</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="school-logo"
+        src="./assets/SoN.svg"
+        alt="logo school of nerds"
+      />
+      <nav class="navbar navbar-expand-lg bg-black shadow-sm">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-black" id="navbarNav">
+            <ul class="navbar-nav nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-semibold fs-4" href="#about-us"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-semibold fs-4" href="#"
+                  >Cursos</a
+                >
+              </li>
+              <li class="nav-item dropdown" data-bs-theme="dark">
+                <a
+                  class="nav-link dropdown-toggle text-white fw-semibold fs-4"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Carreras</a
+                >
+                <ul class="dropdown-menu bg-black">
+                  <li>
+                    <a
+                      class="dropdown-item text-white fw-semibold fs-4"
+                      href="#"
+                      >Full stack web developer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white fw-semibold fs-4"
+                      href="#"
+                      >Full stack designer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white fw-semibold fs-4"
+                      href="#"
+                      >Creador de contenidos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white fw-semibold fs-4"
+                      href="#"
+                      >Ciencia de datos e inteligencia artificial</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white fw-semibold fs-4"
+                      href="#"
+                      >Game developer</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-semibold fs-4" href="#"
+                  >Sumate a nuestros profeNerds!</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-semibold fs-4" href="#"
+                  >Carrito <img src="./assets/carrito.svg" height="32px" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-semibold fs-4" href="#"
+                  >Login / Register
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="about-us" id="about-us">
+          <h1 class="about-us__tittle fw-bold">Sobre nosotros</h1>
+          <div class="about-us__text lh-sm">
+            <p class="fs-5 lh-sm">
+              Somos School of Nerds un lugar donde los estudiantes pueden
+              aprender a programar y desarrollar habilidades tecnológicas de
+              manera efectiva y divertida.
+            </p>
+            <p class="fs-5 lh-sm">
+              Contamos con un equipo de profeNerds altamente capacitados y
+              experimentados, que están comprometidos a ayudar a nuestros
+              estudiantes a alcanzar sus metas y tener éxito en el mundo de la
+              tecnología.
+            </p>
+            <p class="fs-5 lh-sm">
+              Ofrecemos una amplia variedad de cursos y carreras, incluyendo
+              cursos de introducción a la programación, desarrollo web y móvil
+              entre otros, y carreras de: creador de contenidos , full stack
+              designer , ciencia de datos e inteligencia artificial , full stack
+              web developer y game developer.
+            </p>
+            <p class="fs-5 lh-sm">
+              Además, nuestra escuela cuenta con una comunidad activa y apoyo,
+              lo que permite a nuestros estudiantes aprender y crecer juntos.
+            </p>
+            <p class="fs-5 lh-sm">
+              Si estás interesado en convertirte en un programador o simplemente
+              quieres aprender más sobre la tecnología, School of Nerds es el
+              lugar perfecto para vos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="cursos d-flex" id="cursos">
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/html+css.svg"
+          class="card-img-top"
+          alt="html + css logo"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de HTML y CSS (Gratis)</h5>
+          <p class="card-text fw-semibold fs-6">
+            En este curso, aprenderás a crear y estructurar páginas web
+            utilizando HTML y darle estilo y diseño a tus páginas con CSS.
+            ¡Esperamos verte en el curso!
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 0</span></h4>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/Js-logo.svg"
+          class="card-img-top"
+          alt="javascript logo"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de Javascript</h5>
+          <p class="card-text">
+            Aprenderás a utilizar JavaScript para crear interacciones y
+            animaciones en tus páginas web, trabajar con datos y hacer
+            solicitudes a APIs externas.
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 5000</span></h4>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/frameworks.svg"
+          class="card-img-top"
+          alt="logos frameworks"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de frameworks de JS</h5>
+          <p class="card-text">
+            En este curso aprenderas los 3 frameworks mas importantes de
+            Javascript , lo que hara que puedas tener trabajos mas
+            profesionales.
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 7000</span></h4>
+          <a href="#" class="btn btn-primary btn-color">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/python logo.svg"
+          class="card-img-top"
+          alt="logo python"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de python</h5>
+          <p class="card-text">
+            Muy utilizado en el desarrollo de software, la ciencia de datos y la
+            automatización de tareas. Es conocido por su sintaxis legible y
+            simple, lo que lo convierte en una excelente opción para
+            principiantes.
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 5000</span></h4>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/psyai logos.svg"
+          class="card-img-top"
+          alt="logo python"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de Illustrator y Photoshop</h5>
+          <p class="card-text">
+            Las dos herramientas mas conocidas en el mundo del diseño y edicion
+            de imagenes.
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 2000</span></h4>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/seo logo.svg"
+          class="card-img-top"
+          alt="logo python"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de SEO</h5>
+          <p class="card-text">
+            En este curso, aprenderás a optimizar tu sitio web para que sea más
+            visible en los motores de búsqueda. Aprenderás técnicas y
+            estrategias para mejorar tu posicionamiento en los resultados de
+            búsqueda y atraer más tráfico a tu sitio.
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 4000</span></h4>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/unity logo.svg"
+          class="card-img-top"
+          alt="logo python"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de Unity</h5>
+          <p class="card-text">
+            Aprenderás a utilizar el motor de juegos Unity para crear tus
+            propias experiencias de realidad virtual y juegos. A lo largo de las
+            lecciones, exploraremos cómo utilizar Unity para crear y programar
+            juegos en 3D y 2D, así como cómo utilizar diferentes herramientas y
+            plugins para mejorar tu workflow de desarrollo.
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 5000</span></h4>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/unreal logo.svg"
+          class="card-img-top"
+          alt="logo python"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de Unreal Engine</h5>
+          <p class="card-text">
+            En este curso, te enseñaremos a utilizar este motor de juegos para
+            crear tus propias experiencias de juegos y realidad virtual en 3D y
+            2D. A lo largo de las lecciones, aprenderás a programar y utilizar
+            diferentes herramientas y plugins para mejorar tu proceso de
+            desarrollo.
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 4000</span></h4>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="card text-bg-dark" style="width: 24rem">
+        <img
+          src="./assets/seo logo.svg"
+          class="card-img-top"
+          alt="logo python"
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">Curso de SEO</h5>
+          <p class="card-text">
+            En este curso, aprenderás a optimizar tu sitio web para que sea más
+            visible en los motores de búsqueda. Aprenderás técnicas y
+            estrategias para mejorar tu posicionamiento en los resultados de
+            búsqueda y atraer más tráfico a tu sitio.
+          </p>
+          <h4 class="card-price">Precio: <span class="badge">$ 4000</span></h4>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
