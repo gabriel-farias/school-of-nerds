@@ -8,6 +8,7 @@ font-family: 'Josefin Sans', sans-serif; */
   --gray: #dfdfdf;
 }
 
+
 header {
   align-items: center;
   background-color: var(--bg-black);
@@ -25,6 +26,7 @@ header {
 }
 .nav-item {
   font-family: "Amatic SC";
+
 }
 
 .about-us__tittle {
@@ -59,7 +61,7 @@ header {
 }
 .card-body{
   flex-direction: column;
-  
+
 }
 .card:hover {
   border: 2px solid var(--green_apple);
@@ -79,3 +81,60 @@ header {
   border-color: var(--purple);
   
 }
+
+/* ----------Login / Register---------- */
+
+.login-register{
+  background-color: var(--light_purple);
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.form{
+  align-items: center;
+  background-color: var(--bg-black);
+  border: 1px solid var(--bg-black);
+  border-radius: 15px;
+  color: var(--green_apple);
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  gap: 5px;
+  padding: 20px;
+  width: 320px;
+}
+.form__tittle{
+  font-family: "Amatic SC";
+}
+.form__button{
+  background-color: var(--green_apple);
+  border: 1px solid var(--bg-black);
+  border-radius: 10px;
+  color: var(--bg-black);
+  padding: 10px;
+}
+.form__button:hover{
+  background-color: var(--bg-black);
+  color: var(--green_apple);
+  border: 1px solid var(--green_apple);
+}
+.link{
+  text-decoration: none;
+  color: var(--light_purple);
+}
+.link:hover{
+  color:var(--gray)
+}
+
+/* --------Carrito de compras-------- */
+.carrito{
+  width: 100vw;
+  background-color: var(--light_purple);
+}
+.container__table{
+  display: flex;
+  justify-content: center;
+}
+
