@@ -54,7 +54,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link text-white fw-semibold fs-4"
-                  href="#cursos"
+                  href="#cursos__container"
                   event="click"
                   >Cursos</a
                 >
@@ -114,7 +114,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link text-white fw-semibold fs-4"
-                  href="carrito.html"
+                  href="#"
                   >Carrito <img src="./assets/carrito.svg" height="32px" alt=""
                 /></a>
               </li>
@@ -164,9 +164,20 @@
           </p>
         </div>
       </div>
+      <section class="seccion__cursos">
+        <h1 class="fw-bold">Nuestros Cursos</h1>
+        <div class="categories">
+          <button class="category active">Todas</button>
+          <button class="category" data-category="frontend">Frontend</button>
+          <button class="category" data-category="backend">Backend</button>
+          <button class="category" data-category="design">Design</button>
+          <button class="category" data-category="gaming">Gaming development</button>
+        </div>
+        <div class="cursos d-flex" id="cursos__container"></div>
+        <button class="ver-mas">Ver Más</button>
+      </section>
     </main>
-
-    <section class="cursos d-flex" id="cursos__container"></section>
+    <script src="data.js"></script>
     <script src="main.js"></script>
     <script src="products.js"></script>
   </body>
