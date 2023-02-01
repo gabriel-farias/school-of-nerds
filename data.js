@@ -63,16 +63,3 @@ const cursos = [
       logo: "./assets/blender logo.svg",
     },
   ];
-  const splitProducts = (size) => {
-    let dividedProducts = [];
-    for (let i = 0; i < cursos.length; i += size) {
-      dividedProducts.push(cursos.slice(i, i + size));
-    }
-    return dividedProducts;
-  };
-  
-  const productsController = {
-    dividedProducts: splitProducts(3),
-    nextProductsIndex: 1,
-    productsLimit: splitProducts(3).length,
-  };

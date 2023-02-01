@@ -18,7 +18,7 @@ header {
   padding: 20px;
 }
 .school-logo {
-  height: 200px;
+  height: 100px;
 }
 .navbar-nav {
   display: flex;
@@ -28,9 +28,27 @@ header {
   font-family: "Amatic SC";
 
 }
+.hero{
+  background: url(./assets/SoN\ portada.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Amatic SC', cursive;
+  padding: 50px 0 0 50px;
+  height: 600px;
+  margin: 0;
+}
+
+.hero h1{
+  width: 250px;
+  font-weight: 900;
+  font-size: 3em;
+}
 
 .about-us__tittle , .seccion__cursos{
   font-family: "Amatic SC";
+}
+.seccion__cursos{
+  padding-bottom: 50px;
 }
 .about-us {
   background: rgb(137, 131, 196);
@@ -153,13 +171,108 @@ header {
   color:var(--gray)
 }
 
-/* --------Carrito de compras-------- */
-.carrito{
-  width: 100vw;
-  background-color: var(--light_purple);
-}
-.container__table{
-  display: flex;
-  justify-content: center;
+.footer ,.footer p{
+  background-color: var(--bg-black);
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--gray);
 }
 
+.contacto{
+  background: var(--purple);
+  color: var(--gray);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-shadow: 1px 1px 2px black;
+}
+.contacto__titulo, .container__form__profenerds h1{
+  margin: 0px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px black;
+}
+.contacto ul,.container__form__profenerds form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  list-style: none;
+  padding: 0;
+}
+
+.container__redes{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* ------------- carrito ------------ */
+
+#carrito{
+  background-color: var(--bg-black);
+  color: var(--gray);
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+.carrito__curso-logo{
+  height: 32px;
+}
+.carrito__curso {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.carrito__lista{
+  list-style: none;
+}
+
+/* --------- animacion ---------- */
+.hero h1{
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  
+  
+  @-webkit-keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
