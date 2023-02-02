@@ -107,7 +107,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white fw-semibold fs-4" href="#"
+                <a class="nav-link text-white fw-semibold fs-4" href="#contacto"
                   >Sumate a nuestros profeNerds!</a
                 >
               </li>
@@ -119,6 +119,7 @@
                   >Login / Register
                 </a>
               </li>
+              <li></li>
             </ul>
           </div>
         </div>
@@ -129,11 +130,16 @@
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight"
-        style="background-color: black; border:1px solid #dbff00; font-family: 'Amatic SC', cursive; font-size: 1.5em;font-weight: bolder;"
+        style="
+          background-color: black;
+          border: 1px solid #dbff00;
+          font-family: 'Amatic SC', cursive;
+          font-size: 1.5em;
+          font-weight: bolder;
+        "
       >
-        Carrito <img src="./assets/carrito.svg" height="24px" alt="">
+        Carrito <img src="./assets/carrito.svg" height="24px" alt="" />
       </button>
-
       <div
         class="offcanvas offcanvas-end"
         tabindex="-1"
@@ -141,9 +147,7 @@
         aria-labelledby="offcanvasRightLabel"
       >
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasRightLabel">
-            Tus productos
-          </h5>
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
           <button
             type="button"
             class="btn-close"
@@ -151,12 +155,15 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body " id="carrito"></div>
+        <div class="offcanvas-body" id="carrito"></div>
       </div>
     </header>
     <main>
       <div class="hero">
-        <h1>Bienvenidos a School of nerds , la escuela que forma a los Nerds del mañana.</h1>
+        <h1>
+          Bienvenidos a School of nerds , la escuela que forma a los Nerds del
+          mañana.
+        </h1>
       </div>
       <div class="about-us" id="about-us">
         <h1 class="about-us__tittle fw-bold">Sobre nosotros</h1>
@@ -193,18 +200,18 @@
       <section class="seccion__cursos">
         <h1 class="fw-bold">Nuestros Cursos</h1>
         <div class="categories">
-          <button class="category active">Todas</button>
-          <button class="category" data-category="frontend">Frontend</button>
-          <button class="category" data-category="backend">Backend</button>
-          <button class="category" data-category="design">Design</button>
-          <button class="category" data-category="gaming">
+          <button class="category active" data-filter="all">Todas</button>
+          <button class="category" data-filter="frontend">Frontend</button>
+          <button class="category" data-filter="backend">Backend</button>
+          <button class="category" data-filter="design">Design</button>
+          <button class="category" data-filter="gaming development">
             Gaming development
           </button>
         </div>
         <div class="cursos d-flex" id="cursos__container"></div>
         <button class="ver-mas">Ver Más</button>
       </section>
-      <section class="contacto">
+      <section class="contacto" id="contacto">
         <div class="container__redes">
           <h1 class="contacto__titulo">Contactanos</h1>
           <ul>
@@ -240,20 +247,33 @@
             <img src="./assets/SoN.svg" height="32px" alt="" />
           </h1>
           <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" placeholder="Nombre" />
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" placeholder="Apellido" />
+            <label for="nombreFormCV">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombreFormCV"
+              placeholder="Nombre"
+            />
+            <label for="apellidoFormCv">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellidoFormCv"
+              placeholder="Apellido"
+            />
             <label for="carga">Carga tu CV</label>
             <input type="file" name="carga" />
+            <button type="submit">Enviar</button>
           </form>
         </div>
+        <a href="#" class="float">
+          <i class="fa fa-plus my-float"><img src="./assets/icons8-arrow-up-58.png" alt=""></i>
+          </a>
       </section>
     </main>
     <footer class="footer"></footer>
     <script src="data.js"></script>
     <script src="main.js"></script>
-    <script src="index.js"></script>
     <script src="footer.js"></script>
   </body>
 </html>

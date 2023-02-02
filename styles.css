@@ -10,15 +10,15 @@ font-family: 'Josefin Sans', sans-serif; */
 
 
 header {
-  align-items: center;
+  justify-content: center;
   background-color: var(--bg-black);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 20px;
 }
 .school-logo {
-  height: 100px;
+  height: 70px;
 }
 .navbar-nav {
   display: flex;
@@ -147,6 +147,7 @@ header {
   gap: 5px;
   padding: 20px;
   width: 320px;
+  
 }
 .form__tittle{
   font-family: "Amatic SC";
@@ -222,24 +223,54 @@ header {
 /* ------------- carrito ------------ */
 
 #carrito{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--bg-black);
   color: var(--gray);
   font-family: 'Josefin Sans', sans-serif;
   
 }
 .carrito__curso-logo{
-  height: 32px;
+  height: 28px;
 }
-.carrito__curso {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
+
 
 .carrito__lista{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.carrito__lista li, .carrito__lista li img,.carrito__lista li h6,.carrito__lista li p,.carrito__lista li a{
+  margin: 0;
+  padding: 0;
+}
+.carrito__curso{
+
+  margin: 0;
+  padding: 0;
+}
+.btn-eliminar{
+  padding: 0;
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:var(--green_apple);
+	border-radius:50px;
+	box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.my-float{
+	margin-top:22px;
+}
 /* --------- animacion ---------- */
 .hero h1{
   -webkit-animation-name: fadeInRight;
