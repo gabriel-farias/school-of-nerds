@@ -7,7 +7,10 @@ font-family: 'Josefin Sans', sans-serif; */
   --bg-black: #000000;
   --gray: #dfdfdf;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 
 header {
   justify-content: center;
@@ -28,12 +31,16 @@ header {
   font-family: "Amatic SC";
 
 }
+.btn-carrito{
+  max-height: 70px;
+}
 .hero{
   background: url(./assets/SoN\ portada.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left;
   font-family: 'Amatic SC', cursive;
-  padding: 50px 0 0 50px;
+  padding: 50px 0 0 20px;
   height: 600px;
   margin: 0;
 }
@@ -97,6 +104,10 @@ header {
   justify-content: center;
   padding: 20px;
 
+}
+.cursos__container{
+  margin: 0;
+  width: 100vw;
 }
 .card {  
   padding: 10px;
@@ -181,6 +192,7 @@ header {
 
 .contacto{
   background: var(--purple);
+  width: 100vw;
   color: var(--gray);
   display: flex;
   flex-wrap: wrap;
@@ -217,6 +229,7 @@ header {
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  width: 100vw;
 }
 
 
@@ -306,4 +319,11 @@ header {
   -webkit-transform: none;
   transform: none;
   }
+  }
+
+
+  /* -------- responsive -------- */
+
+  @media (max-width: 768px) {
+
   }

@@ -1,13 +1,28 @@
 const cursosContainer = document.getElementById("cursos__container");
 const carrito = document.getElementById("carrito");
-let carritoCursos = [];
+let carritoCursos = JSON.parse(localStorage.getItem("carritoCursos")) || [];
 let total = 0;
 let id = 0;
-
+window.onload = function () {
+  for (let curso of carritoCursos) {
+    total += curso.precio_de_curso;
+  }
+  mostrarCarrito();
+};
 const agregarAlCarrito = (curso) => {
   curso.id = id++;
   carritoCursos.push(curso);
   total += curso.precio_de_curso;
+  localStorage.setItem("carritoCursos", JSON.stringify(carritoCursos));
+  mostrarCarrito();
+};
+const eliminarCursoDelCarrito = (id) => {
+  carritoCursos = carritoCursos.filter((curso) => curso.id !== id);
+  total = carritoCursos.reduce((acum, curso) => acum + curso.precio_de_curso, 2);
+  localStorage.setItem("carritoCursos", JSON.stringify(carritoCursos));
+  mostrarCarrito();
+};
+const mostrarCarrito = () => {
   const listaCursosHtml = carritoCursos
     .map((curso) => {
       return `<li class="carrito__curso container text-center row"> 
@@ -61,23 +76,14 @@ cursosContainer.addEventListener("click", (e) => {
 
 carrito.addEventListener("click", (e) => {
   if (e.target.classList.contains("btn-eliminar")) {
-    const curso = carritoCursos.find(
-      (curso) => curso.id === parseInt(e.target.dataset.id)
-    );
-    const cursoIndex = carritoCursos.indexOf(curso);
-    carritoCursos.splice(cursoIndex, 1);
-    total -= curso.precio_de_curso;
-    const listaCursosHtml = carritoCursos
-      .map((curso) => {
-        return `<li class="carrito__curso container text-center row"> <img src="${curso.logo}" class="carrito__curso-logo col-2" alt="curso logo"> <h6 class="carrito__curso-nombre col-6">${curso.nombre_de_curso}</h6> <p class="carrito__curso-precio col-3">$ ${curso.precio_de_curso}</p> <a class="col-1" ><img src="./assets/delete btn.svg" class="btn-eliminar " data-id="${curso.id}"  alt=""></a> </li>`;
-      })
-      .join("");
-    carrito.innerHTML = `
-      <p>Cursos en el carrito: ${carritoCursos.length}</p> 
-      <ul class="carrito__lista"> ${listaCursosHtml} </ul> 
-      <p>Precio total: $ ${total}</p>`;
-    e.target.parentElement.remove();
-  }
+        const idCurso = parseInt(e.target.dataset.id);
+        const curso = carritoCursos.find((curso) => curso.id === idCurso);
+        total -= curso.precio_de_curso;
+        carritoCursos = carritoCursos.filter((curso) => curso.id !== idCurso);
+        localStorage.setItem("carritoCursos", JSON.stringify(carritoCursos));
+        mostrarCarrito();
+      }
+  
 });
 const buttonsFilt = document.querySelectorAll("button[data-filter]");
 const cursosFilt = document.querySelectorAll(".curso-cat");
