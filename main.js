@@ -54,7 +54,7 @@ const agregarCursoHtml = (cursos) => {
         ${cursos.detalle_de_curso}
       </p>
       <h5 class="card-price ">Precio: <span class="badge fs-5 product__price" >$ ${cursos.precio_de_curso}</span></h5>
-      <button class="btn btn-primary btn-add ">Agregar al carrito</button>
+      <button class="btn btn-primary btn-add " style = "background-color: var(--green_apple); color: black; border:1px solid black ">Agregar al carrito</button>
     </div>
   </div>
 `;

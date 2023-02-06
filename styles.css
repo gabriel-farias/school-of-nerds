@@ -7,11 +7,11 @@ font-family: 'Josefin Sans', sans-serif; */
   --bg-black: #000000;
   --gray: #dfdfdf;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   width: 100vw;
 }
 
@@ -32,33 +32,33 @@ header {
 }
 .nav-item {
   font-family: "Amatic SC";
-
 }
-.btn-carrito{
+.btn-carrito {
   max-height: 70px;
 }
-.hero{
+.hero {
   background: url(./assets/SoN\ portada.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   padding: 50px 0 0 20px;
   height: 600px;
   margin: 0;
   width: 100vw;
 }
 
-.hero h1{
+.hero h1 {
   width: 250px;
   font-weight: 900;
   font-size: 3em;
 }
 
-.about-us__tittle , .seccion__cursos{
+.about-us__tittle,
+.seccion__cursos {
   font-family: "Amatic SC";
 }
-.seccion__cursos{
+.seccion__cursos {
   padding-bottom: 50px;
 }
 .about-us {
@@ -76,25 +76,27 @@ header {
 .about-us__text {
   padding: 30px;
 }
-.seccion__cursos h1{
+.seccion__cursos h1 {
   align-self: flex-start;
   margin: 0;
   padding: 30px 0px 0px 30px;
   color: var(--gray);
 }
-.seccion__cursos{
+.seccion__cursos {
   background: var(--bg-black);
+  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.categories{
+.categories {
   display: flex;
   gap: 10px;
-  justify-content:center;
+  justify-content: center;
 }
-.category, .ver-mas{
-  background-color: #dbff00;
+.category,
+.ver-mas {
+  background-color: var(--green_apple);
   color: var(--bg-black);
   font-size: 1.5em;
   font-weight: bolder;
@@ -107,50 +109,46 @@ header {
   gap: 20px;
   justify-content: center;
   padding: 20px;
-
 }
-#cursos__container{
+#cursos__container {
   padding: 0;
   margin: 0;
   width: 100vw;
 }
-.card {  
+.card {
   padding: 10px;
 }
-.card-body{
+.card-body {
   flex-direction: column;
-
 }
 .card:hover {
   border: 2px solid var(--green_apple);
   padding: 8px;
 }
 
-.card-body a{
+.card-body a {
   background-color: var(--light_purple);
   border-color: var(--purple);
 }
-.card-body a:hover{
+.card-body a:hover {
   background-color: var(--purple);
   border-color: var(--green_apple);
-  
 }
-.badge{
+.badge {
   background-color: var(--purple);
   border-color: var(--purple);
-  
 }
 
 /* ----------Login / Register---------- */
 
-.login-register{
+.login-register {
   background-color: var(--light_purple);
   display: flex;
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.form{
+.form {
   align-items: center;
   background-color: var(--bg-black);
   border: 1px solid var(--bg-black);
@@ -163,39 +161,39 @@ header {
   gap: 5px;
   padding: 20px;
   width: 320px;
-  
 }
-.form__tittle{
+.form__tittle {
   font-family: "Amatic SC";
 }
-.form__button{
+.form__button {
   background-color: var(--green_apple);
   border: 1px solid var(--bg-black);
   border-radius: 10px;
   color: var(--bg-black);
   padding: 10px;
 }
-.form__button:hover{
+.form__button:hover {
   background-color: var(--bg-black);
   color: var(--green_apple);
   border: 1px solid var(--green_apple);
 }
-.link{
+.link {
   text-decoration: none;
   color: var(--light_purple);
 }
-.link:hover{
-  color:var(--gray)
-}
-
-.footer ,.footer p{
-  background-color: var(--bg-black);
-  margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+.link:hover {
   color: var(--gray);
 }
 
-.contacto{
+.footer,
+.footer p {
+  background-color: var(--bg-black);
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--gray);
+}
+
+.contacto {
   background: var(--purple);
   width: 100vw;
   color: var(--gray);
@@ -206,55 +204,52 @@ header {
   padding-top: 50px;
   text-shadow: 1px 1px 2px black;
 }
-.contacto__titulo, .container__form__profenerds h1{
+.contacto__titulo,
+.container__form__profenerds h1 {
   margin: 0px;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-weight: bolder;
   text-shadow: 1px 1px 2px black;
 }
-.contacto ul,.container__form__profenerds form{
+.contacto ul,
+.container__form__profenerds form {
   display: flex;
   flex-direction: column;
   gap: 5px;
   font-size: 1em;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   list-style: none;
   padding: 0;
 }
 
-.container__redes{
+.container__redes {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  
 }
-
 
 /* ------------- carrito ------------ */
 
-#carrito{
+#carrito {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--bg-black);
   color: var(--gray);
-  font-family: 'Josefin Sans', sans-serif;
-  
+  font-family: "Josefin Sans", sans-serif;
 }
-.carrito__curso-logo{
+.carrito__curso-logo {
   height: 28px;
 }
 
-
-.carrito__lista{
+.carrito__lista {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -262,40 +257,84 @@ header {
   margin: 0;
   padding: 0;
 }
-.carrito__lista li, .carrito__lista li img,.carrito__lista li h6,.carrito__lista li p,.carrito__lista li a{
+.carrito__lista li,
+.carrito__lista li img,
+.carrito__lista li h6,
+.carrito__lista li p,
+.carrito__lista li a {
   margin: 0;
   padding: 0;
 }
-.carrito__curso{
-
+.carrito__curso {
   margin: 0;
   padding: 0;
 }
-.btn-eliminar{
+.btn-eliminar {
   padding: 0;
 }
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:var(--green_apple);
-	border-radius:50px;
-	box-shadow: 2px 2px 3px rgb(0, 0, 0);
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--green_apple);
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
-.my-float{
-	margin-top:22px;
+.my-float {
+  margin-top: 22px;
 }
 /* --------- animacion ---------- */
-.hero h1{
+.hero h1 {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  -webkit-animation-duration: 0s;
-  animation-duration: 0s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* -------- responsive -------- */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .about-us__text {
+    padding: 0px;
+  }
+}
