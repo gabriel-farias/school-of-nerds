@@ -293,76 +293,9 @@ header {
 .hero h1{
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 0s;
+  animation-duration: 0s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  }
   
-  
-  @-webkit-keyframes fadeInRight {
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-  }
-  100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-  }
-  }
-  
-  @keyframes fadeInRight {
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-  }
-  100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-  }
-  }
-
-
-  /* -------- responsive -------- */
-
-  @media (max-width: 768px) {
-    .hero h1{
-      -webkit-animation-name: fadeInRight;
-      animation-name: fadeInRight;
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      }
-      
-      
-      @-webkit-keyframes fadeInRight {
-      0% {
-      opacity: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-      }
-      100% {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-      }
-      }
-      
-      @keyframes fadeInRight {
-      0% {
-      opacity: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-      }
-      100% {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-      }
-      }
   }
