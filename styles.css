@@ -42,7 +42,7 @@ header {
   background-size: cover;
   background-position: left;
   font-family: "Amatic SC", cursive;
-  padding: 50px 0 0 20px;
+  padding: 50px 0 0 50px;
   height: 600px;
   margin: 0;
   width: 100vw;
@@ -94,13 +94,13 @@ header {
   gap: 10px;
   justify-content: center;
 }
-.category,
-.ver-mas {
+.category {
   background-color: var(--green_apple);
   color: var(--bg-black);
   font-size: 1.5em;
   font-weight: bolder;
   border-radius: 15px;
+  padding: 5px 10px;
 }
 .cursos {
   background: var(--bg-black);
@@ -147,6 +147,7 @@ header {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 570px;
 }
 .form {
   align-items: center;

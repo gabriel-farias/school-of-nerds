@@ -3,6 +3,7 @@ const carrito = document.getElementById("carrito");
 let carritoCursos = JSON.parse(localStorage.getItem("carritoCursos")) || [];
 let total = 0;
 let id = 0;
+
 window.onload = function () {
   for (let curso of carritoCursos) {
     total += curso.precio_de_curso;
@@ -18,7 +19,10 @@ const agregarAlCarrito = (curso) => {
 };
 const eliminarCursoDelCarrito = (id) => {
   carritoCursos = carritoCursos.filter((curso) => curso.id !== id);
-  total = carritoCursos.reduce((acum, curso) => acum + curso.precio_de_curso, 2);
+  total = carritoCursos.reduce(
+    (acum, curso) => acum + curso.precio_de_curso,
+    2
+  );
   localStorage.setItem("carritoCursos", JSON.stringify(carritoCursos));
   mostrarCarrito();
 };
@@ -41,20 +45,20 @@ const mostrarCarrito = () => {
 
 const agregarCursoHtml = (cursos) => {
   return `
-  <div class="card text-bg-dark curso-cat" style="width: 24rem" data-category="${cursos.categoria}" >
+  <div class="card text-bg-dark curso-cat " style="width: 24rem" data-category="${cursos.categoria}" >
     <img
       src="${cursos.logo}"
       class="card-img-top product__logo"
       alt="html + css logo"
       style="height: 45%"
     />
-    <div class="card-body d-flex justify-content-evenly"  >
+    <div class="card-body d-flex justify-content-between"  >
       <h5 class="card-title product__name">${cursos.nombre_de_curso}</h5>
       <p class="card-text fw-semibold fs-6">
         ${cursos.detalle_de_curso}
       </p>
       <h5 class="card-price ">Precio: <span class="badge fs-5 product__price" >$ ${cursos.precio_de_curso}</span></h5>
-      <button class="btn btn-primary btn-add " style = "background-color: var(--green_apple); color: black; border:1px solid black ">Agregar al carrito</button>
+      <button class="btn btn-primary btn-add " style = "background-color: var(--light_purple); color: black; border:1px solid black; font-weight : 600;">Agregar al carrito</button>
     </div>
   </div>
 `;
@@ -65,25 +69,21 @@ cursosContainer.innerHTML = cursosHtml;
 
 cursosContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("btn-add")) {
-    const curso = cursos.find(
-      (curso) =>
-        curso.nombre_de_curso ===
-        e.target.parentElement.querySelector(".product__name").textContent
-    );
+    const curso = cursos.find((curso) => curso.nombre_de_curso === e.target.parentElement.querySelector(".product__name").textContent);
     agregarAlCarrito(curso);
+    e.target.textContent = "Agregado";
   }
 });
 
 carrito.addEventListener("click", (e) => {
   if (e.target.classList.contains("btn-eliminar")) {
-        const idCurso = parseInt(e.target.dataset.id);
-        const curso = carritoCursos.find((curso) => curso.id === idCurso);
-        total -= curso.precio_de_curso;
-        carritoCursos = carritoCursos.filter((curso) => curso.id !== idCurso);
-        localStorage.setItem("carritoCursos", JSON.stringify(carritoCursos));
-        mostrarCarrito();
-      }
-  
+    const idCurso = parseInt(e.target.dataset.id);
+    const curso = carritoCursos.find((curso) => curso.id === idCurso);
+    total -= curso.precio_de_curso;
+    carritoCursos = carritoCursos.filter((curso) => curso.id !== idCurso);
+    localStorage.setItem("carritoCursos", JSON.stringify(carritoCursos));
+    mostrarCarrito();
+  }
 });
 const buttonsFilt = document.querySelectorAll("button[data-filter]");
 const cursosFilt = document.querySelectorAll(".curso-cat");
